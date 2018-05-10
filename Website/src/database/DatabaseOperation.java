@@ -79,6 +79,28 @@ public void executeQuery(String query){
 
 
 }
+
+public ResultSet getData(String query){
+    ResultSet rs=null;
+    try{
+	//Statement stmt = conn.createStatement();
+    PreparedStatement pS = prepareStatement(query);
+    rs = pS.executeQuery();
+    
+    }
+    catch(SQLException ex) {
+    	ex.getLocalizedMessage();
+    }
+/*    finally{
+    	try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }*/
+
+    return rs;
+}
     
     public PreparedStatement prepareStatement(String query) throws SQLException{
         

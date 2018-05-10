@@ -1,0 +1,28 @@
+.navbar-default {
+	
+	background-color:#8DE3C5;
+	
+}
+
+
+.panel-primary>.panel-heading{
+	
+	background-color: #8DE3C5;
+}
+
+.panel.panel-primary {
+	
+	margin-top:100px;
+	margin-left:100px;
+}
+
+#footer.container-fluid {
+	position:relative;
+	margin-top:50px;
+	background-color: #8DE3C5;
+}
+
+#ads.container-fluid{
+	position: relative;
+    margin-top: 50px;
+}
