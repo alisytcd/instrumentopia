@@ -27,7 +27,7 @@
 			<div class="panel-heading"><b>Create A New Ad</b></div>
 				<div class="panel-body">
 					
-							<FORM CLASS="form-horizontal" METHOD=POST ACTION="SaveProductDetails.jsp">
+							<FORM CLASS="form-horizontal" METHOD=POST ACTION="SaveProductDetails.jsp" enctype='multipart/form-data'>
 							
 									<%	java.util.Date date = new java.util.Date();
 										String id= date.toString() ;
@@ -57,9 +57,15 @@
 										<INPUT TYPE=TEXT PLACEHOLDER="Enter Instrument Type e.g. guitar,bass,etc." NAME=type SIZE=20><BR>
 									</div>
 									
-									<div class="form-group">
+								<!--  	<div class="form-group">
 										<label class="control-label col-sm-2"><b>Image</b></label>
 										<INPUT TYPE=TEXT PLACEHOLDER="Enter Image Link" NAME=picture SIZE=20><BR>
+									</div> 
+								-->
+									
+									<div class="form-group">
+										<label class="control-label col-sm-2"><b>Image</b></label>
+										<INPUT TYPE=file NAME=picture>
 									</div>
 									
 

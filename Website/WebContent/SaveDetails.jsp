@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<%@ page import="database.*, java.util.* ,java.sql.*" %>
+<%@ page import="database.*, java.util.* ,java.sql.*,java.io.*, java.nio.file.Files, java.nio.file.StandardCopyOption" %>
 <%
 /* 	String para1= request.getParameter("username");
 	String para2= request.getParameter("address");
@@ -36,6 +36,16 @@
 	
 	
     out.print(para1+ " "+para2+ " "+para3+" "+para4+" "+para5+" "+para6+" "+para7); */
+    
+    Part filePart = request.getPart("picture");
+    InputStream is = filePart.getInputStream();
+    String pathToSave = "C:/Users/5933/Desktop/EclipseWorkspace/Website/WebContent/profilePics/"+filePart.getSubmittedFileName();
+    System.out.println(pathToSave);
+    File fileToSave = new File(pathToSave);
+
+    Files.copy(is,fileToSave.toPath(),StandardCopyOption.REPLACE_EXISTING);
+
+    user.setPicture("profilePics/"+filePart.getSubmittedFileName());
 	
     String sqlStmt = "INSERT INTO db.USER(username,address,name,phone,email,picture,password) VALUES('"+user.getUsername()+"','"+user.getAddress()+"','"+user.getName()+"','"+user.getPhone()+"','"+user.getEmail()+"','"+user.getPicture()+"','"+user.getPassword()+"');";
     

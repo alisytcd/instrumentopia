@@ -20,7 +20,7 @@
 			<div class="panel-heading"><b>Create A New Account</b></div>
 				<div class="panel-body">
 					
-							<FORM CLASS="form-horizontal" METHOD=POST ACTION="SaveDetails.jsp">
+							<FORM CLASS="form-horizontal" METHOD=POST ACTION="SaveDetails.jsp" enctype='multipart/form-data'>
 							
 	
 							
@@ -51,7 +51,7 @@
 									
 									<div class="form-group">
 										<label class="control-label col-sm-2"><b>Profile Picture</b></label>
-										<INPUT TYPE=TEXT PLACEHOLDER="Profile Picture Link" NAME=picture SIZE=20><BR>
+										<INPUT TYPE=file NAME=picture>
 									</div>
 									
 									<div class="form-group">

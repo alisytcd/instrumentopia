@@ -1,11 +1,3 @@
-.jumbotron {
-    
-    height: 400px;
-    background-image:url("backgroundCover.png");
-    margin-bottom:0px;
-    color:grey;
-}
-
 .navbar-default {
 	
 	background-color:#8DE3C5;
@@ -23,6 +15,7 @@
     color: #FFC0CB;
 }
 
+
 #footer.container-fluid {
 	position:relative;
 	/* margin-top:50px; */
@@ -32,4 +25,10 @@
 #ads.container-fluid{
 	position: relative;
     margin-top: 50px;
+}
+
+.img-thumbnail {
+	position:relative;
+	max-height:300px;
+	max-width: 300px;
 }
