@@ -2,13 +2,21 @@ package product;
 
 public class ProductData {
 
-	String id;
-	String name;
-	String description;
-	String status;
-	String picture;
-	String username;
-	String type;
+	public String id;
+	public String name;
+	public String description;
+	public String status;
+	public String picture;
+	public String username;
+	public String type;
+	
+	public ProductData() {
+		
+		
+		
+		
+		
+	}
 	
 	public String getId() {
 		return id;

@@ -21,14 +21,23 @@
     
     if (rs.next()) {
         session.setAttribute("username", userName);
+        session.setAttribute("password",pwd);
+        
+        String address = rs.getString("address");
+        String phone = rs.getString("phone");
+        String pic = rs.getString("picture");
+        
+        session.setAttribute("address",address);
+        session.setAttribute("phone",phone);
+        session.setAttribute("picture",pic);
         //out.println("welcome " + userName);
         //out.println("<a href='logout.jsp'>Log out</a>");
+
         response.sendRedirect("index.jsp");
     } else {
         out.println("Invalid password <a href='login.jsp'>try again</a>");
     }
 	
-
 %>
 
 

@@ -1,0 +1,21 @@
+body {
+	
+	 background-image:url("interior-music-shop-alligator-stockport-uk-AAHN93.jpg");
+	background-size:cover; 
+	
+	/* background-color:black; */
+	
+	
+}
+
+.panel-body
+{
+	background-color:#ffb366;	
+}
+
+.panel-primary{
+	border-style:solid;
+	border-color:black;
+	border-width:5px;
+	border-radius:10px;
+}

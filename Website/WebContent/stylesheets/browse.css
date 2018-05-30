@@ -1,0 +1,60 @@
+.navbar-default {
+	
+	background-color:#8DE3C5;
+	
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	margin:2px;
+	/*border: 3px solid red; */
+	border-radius:8px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #6BAD96;
+    color: #FFC0CB;
+}
+
+#footer.container-fluid {
+	position:relative;
+	/* margin-top:50px; */
+	background-color: #8DE3C5;
+}
+
+#ads.container-fluid{
+	position: relative;
+    margin-top: 50px;
+}
+
+#browse{
+	justify-content: center;
+    align-items: center;
+    overflow: auto;
+    width: 1000px;
+    height: 600px;
+    border: 20px solid #8DE3C5;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#details{
+	
+	
+	border:3px solid #8DE3C5;
+	 
+	
+}
+
+#postText{
+	border:3px solid #8DE3C5;
+}
+
+.img-thumbnail {
+	position:relative;
+	max-height:200px;
+	max-width: 200px;
+	padding:20px;
+	border: 5px solid #6BAD96;
+	border-radius: 3px;
+}

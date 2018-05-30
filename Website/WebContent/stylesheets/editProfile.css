@@ -1,0 +1,39 @@
+.navbar-default {
+	
+	background-color:#8DE3C5;
+	
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	margin:2px;
+	/*border: 3px solid red; */
+	border-radius:8px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #6BAD96;
+    color: #FFC0CB;
+}
+
+
+#footer.container-fluid {
+	position:relative;
+	/* margin-top:50px; */
+	background-color: #8DE3C5;
+}
+
+#ads.container-fluid{
+	position: relative;
+    margin-top: 50px;
+}
+
+.panel-primary>.panel-heading{
+	
+	background-color: #8DE3C5;
+}
+
+.panel.panel-primary {
+	
+	margin-top:100px;
+	margin-left:100px;
+}

@@ -18,7 +18,7 @@
 		
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		  <link rel="stylesheet" href="profile.css" type="text/css"/>
+		  <link rel="stylesheet" href="stylesheets/profile.css" type="text/css"/>
 </head>
 
 <body>
@@ -86,21 +86,21 @@
 			<div class="tab-content">
 				  <div id="account" class="tab-pane fade in active">
 				  
-				  		<div class="well-lg">
+				  		<div class="container-fluid">
 				  		
 				  		
 					  		
-					  			<div><img src="<%= user.getPicture() %>" class="img-thumbnail"></div>
+					  			<div class="col-md-4"><img src="<%= user.getPicture() %>" class="img-thumbnail"></div>
 					  		
-					  		
-						  		<div>
-						  			<h4><b>Username :</b> <%= user.getUsername() %></h4>
-								    <h4><b>Address :</b> <%=user.getAddress() %></h4>
-									<h4><b>Name :</b> <%=user.getName() %> </h4>
-									<h4><b>Phone no. :</b> <%=user.getPhone() %></h4>
-									<h4><b>Email : </b><%=user.getEmail() %></h4>
+					  			<%String currentForm = ""; %>
+						  		<div class="col-md-6">
+						  			<h4><b>Username :</b> <%= user.getUsername() + " " %></h4>
+								    <h4><b>Address :</b> <%=user.getAddress() + " " %><button type="button" class="btn"><a href="editProfile.jsp?currForm=address">Change Address</a></button></h4>
+									<h4><b>Name :</b> <%=user.getName() + " " %> </h4>
+									<h4><b>Phone no. :</b> <%=user.getPhone() + " " %><button type="button" class="btn"><a href="editProfile.jsp?currForm=phone">Change Phone</a></button></h4>
+									<h4><b>Email : </b><%=user.getEmail()  + " "%><button type="button" class="btn"><a href="editProfile.jsp?currForm=email">Change Email</a></button></h4>
 					  			
-					  			<button type="button" class="btn"><a href="editProfile.jsp">Edit Details</a></button>
+					  			<!-- <button type="button" class="btn"><a href="editProfile.jsp">Edit Details</a></button> -->
 					  			<button type="button" class="btn"><a href="changePassword.jsp">Change Password</a></button>
 					  			</div>
 				  			

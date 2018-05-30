@@ -11,7 +11,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="index.css" type="text/css"/>
+  <link rel="stylesheet" href="stylesheets/index.css" type="text/css"/>
   
 </head>
 <body>
@@ -36,7 +36,7 @@ System.out.println("USEERNAME IS " +userName);
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li ><a href="index.jsp"  style="color:white">Browse</a></li>
+        <li ><a href="Browse.jsp"  style="color:white">Browse</a></li>
         
         <%if(userName!=null){ %>
         	<li><a href='createProduct.jsp' style="color:white">Post Advertisement</a></li>
